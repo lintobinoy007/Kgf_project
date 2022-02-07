@@ -88,6 +88,10 @@ PM_START_TEXT = """
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
 ✪ Hit /help to see my available commands.
+____________________________
+✪ Hit add kgf viber button to add music vc bot to your
+   Group
+
 """
 
 buttons = [
@@ -96,14 +100,15 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(text="Type /help", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➡ Add KGF To Your Group ", url="t.me/Kgfofficialbot?startgroup=new"),
+            text=" 👨‍🔧 Add KGF To Your Group 👩‍🔧 ", url="t.me/Kgfofficialbot?startgroup=new"),
+        InlineKeyboardButton(
+            text=" 🕺 Add KGF VIBER To Your Group 💃 ", url="t.me/Tridentgroupsbot?startgroup=new"),
     ],
 ]
 
