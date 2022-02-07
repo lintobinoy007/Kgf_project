@@ -96,13 +96,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Type /help", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add KGF To Your Group ➗", url="t.me/Kgfofficialbot?startgroup=new"),
+            text="➡ Add KGF To Your Group ", url="t.me/Kgfofficialbot?startgroup=new"),
     ],
 ]
 
