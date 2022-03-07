@@ -211,9 +211,7 @@ async def shellrunner(_, message: Message):
         if len(output) > 4096:
             with open("output.txt", "w+") as file:
                 file.write(output)
-            await message.reply_document(
-                "output.txt", caption=f"{escape(text)}"
-            )
+            await message.reply_document("output.txt", caption=f"{escape(text)}")
             return os.remove("output.txt")
         await eor(
             message,
