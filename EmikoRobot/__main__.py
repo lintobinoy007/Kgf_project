@@ -375,7 +375,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'*KGF Federation*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -399,13 +399,13 @@ def emiko_about_callback(update, context):
                             text="Support", callback_data="emiko_support"
                         ),
                         InlineKeyboardButton(
-                            text="Credits", callback_data="emiko_credit"
+                            text="Bots", callback_data="emiko_credit"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Source Code",
-                            url="https://github.com/kennedy-ex/EmikoRobot",
+                            text="Developer",
+                            url="https://t.me/alpha_of_humans",
                         ),
                     ],
                     [
@@ -468,9 +468,9 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Support", url="t.me/emikosupport"),
+                        InlineKeyboardButton(text="Support", url="https://t.me/proxbotzofficial"),
                         InlineKeyboardButton(
-                            text="Updates", url="https://t.me/KennedyProject"
+                            text="Updates", url="https://t.me/proxbotz"
                         ),
                     ],
                     [
@@ -489,43 +489,25 @@ def emiko_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sena-ex", url="https://github.com/kennedy-ex"
+                            text="ƘƓƑ ƔƖƁЄƦ.", url="https://t.me/Tridentgroupsbot"
                         ),
                         InlineKeyboardButton(
-                            text="TheHamkerCat", url="https://github.com/TheHamkerCat"
+                           text="BGM MASTER", url="https://t.me/Bgmautofilter_bot"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Feri", url="https://github.com/FeriEXP"
+                            text="Eldro", url="https://t.me/MrEldro_Bot"
                         ),
                         InlineKeyboardButton(
-                            text="riz-ex", url="https://github.com/riz-ex"
+                            text="BGM bot", url="https://t.me/bgmmasterinline_bot"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Anime Kaizoku", url="https://github.com/animekaizoku"
+                            text="Tεѕѕa 💖", url="https://t.me/Miss_TessaBot"
                         ),
-                        InlineKeyboardButton(
-                            text="TheGhost Hunter", url="https://github.com/HuntingBots"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Inuka Asith", url="https://github.com/inukaasith"
-                        ),
-                        InlineKeyboardButton(
-                            text="Noob-Kittu", url="https://github.com/noob-kittu"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Queen Arzoo", url="https://github.com/QueenArzoo"
-                        ),
-                        InlineKeyboardButton(
-                            text="Paul Larsen", url="https://github.com/PaulSonOfLars"
-                        ),
+                    
                     ],
                     [
                         InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
