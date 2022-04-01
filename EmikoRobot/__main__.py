@@ -398,9 +398,7 @@ def emiko_about_callback(update, context):
                         InlineKeyboardButton(
                             text="Support", callback_data="emiko_support"
                         ),
-                        InlineKeyboardButton(
-                            text="Bots", callback_data="emiko_credit"
-                        ),
+                        InlineKeyboardButton(text="Bots", callback_data="emiko_credit"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -468,7 +466,9 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Support", url="https://t.me/proxbotzofficial"),
+                        InlineKeyboardButton(
+                            text="Support", url="https://t.me/proxbotzofficial"
+                        ),
                         InlineKeyboardButton(
                             text="Updates", url="https://t.me/proxbotz"
                         ),
@@ -482,8 +482,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ OUR BOTZ\n"
-            "\nHere Our own botz more will Come soon",
+            text=f"๏ OUR BOTZ\n" "\nHere Our own botz more will Come soon",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -492,7 +491,7 @@ def emiko_about_callback(update, context):
                             text="ƘƓƑ ƔƖƁЄƦ.", url="https://t.me/Tridentgroupsbot"
                         ),
                         InlineKeyboardButton(
-                           text="BGM MASTER", url="https://t.me/Bgmautofilter_bot"
+                            text="BGM MASTER", url="https://t.me/Bgmautofilter_bot"
                         ),
                     ],
                     [
@@ -507,7 +506,6 @@ def emiko_about_callback(update, context):
                         InlineKeyboardButton(
                             text="Tεѕѕa 💖", url="https://t.me/Miss_TessaBot"
                         ),
-                    
                     ],
                     [
                         InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
