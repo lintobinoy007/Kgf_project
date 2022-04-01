@@ -45,6 +45,7 @@ def str_to_obj(string: str):
     obj = pickle.loads(codecs.decode(string.encode(), "base64"))
     return obj
 
+
 async def is_nsfw_on(chat_id: int) -> bool:
     chat = nsfwdb.find_one({"chat_id": chat_id})
     if not chat:
@@ -64,6 +65,7 @@ async def nsfw_off(chat_id: int):
     if not is_nsfw:
         return
     return nsfwdb.insert_one({"chat_id": chat_id})
+
 
 async def get_notes_count() -> dict:
     chats = notesdb.find({"chat_id": {"$exists": 1}})
